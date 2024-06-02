@@ -1,7 +1,9 @@
 # isPalindrome
 This is my code in solving a problem in LeetCode.
 
-class Solution:
+<sub> 
+
+    class Solution:
     def isPalindrome(self, x: int) -> bool:
         # If x is negative, it is not a palindrome.
         # If x is not zero but ends in 0, it is not a palindrome (e.g., 10, 100).
@@ -18,12 +20,14 @@ class Solution:
         # since the middle digit doesn't matter in palindrome (it will always equal to itself), we can simply get rid of it.
         return x == reverted_number or x == reverted_number // 10
 
-# Creating an instance of the Solution class
-solution = Solution()
+        # Creating an instance of the Solution class
+        solution = Solution()
 
-# Testing the isPalindrome method
-print(solution.isPalindrome(121))  # Output: True
-print(solution.isPalindrome(-121)) # Output: False
-print(solution.isPalindrome(10))   # Output: False
-print(solution.isPalindrome(12321)) # Output: True
-print(solution.isPalindrome(0))    # Output: True
+        # Testing the isPalindrome method
+        print(solution.isPalindrome(121))  # Output: True
+        print(solution.isPalindrome(-121)) # Output: False
+        print(solution.isPalindrome(10))   # Output: False
+        prit(solution.isPalindrome(12321)) # Output: True
+        print(solution.isPalindrome(0))    # Output: True
+        
+</sub>
